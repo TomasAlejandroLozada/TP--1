@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool EsMultiploDe3(int n);
+int main()
+{
+    int num;
+    string msg="no es multiplo";
+    cout<<"ingresar número: "<<endl;
+    cin>>num;
+    if(EsMultiploDe3(num))
+    {
+        msg="es multiplo";
+    }
+    cout<<msg<<endl;
+    return 0;
+}
+bool EsMultiploDe3(int n)
+{
+    return n%3==0;
+}    
